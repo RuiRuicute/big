@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void){
+	int a;
+	scanf("%d",&a);
+	int number[a];
+	int b;
+	for(b=0;b<a;b++) scanf("%d",&number[b]);
+	int c;
+	scanf("%d",&c);
+	int countBig=0,countSmall=0;
+	for(b=0;b<a;b++){
+		if(number[b]>c) countBig++;
+		if(number[b]<c) countSmall++;
+	}
+	printf("%d ",countBig);
+	printf("%d",countSmall);
+	return 0;
+} 
